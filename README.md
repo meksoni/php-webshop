@@ -18,5 +18,4 @@ The webshop includes the following features:
 
 This project provided me with valuable experience working with technologies such as PHP, MySQL, and fundamental web technologies (HTML, CSS, JavaScript), while also preparing me for future challenges in the web development field.
 
-## Where u can find a demo of this project?
-
+And with pride, I can say that we successfully passed the exam.  :satisfied:
