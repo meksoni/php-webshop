@@ -43,12 +43,12 @@ $mail->CharSet = 'UTF-8';
 //Set PHPMailer to use SMTP.
 $mail->isSMTP();            
 //Set SMTP host name                          
-$mail->Host = "smtp.cnt.rs";
+$mail->Host = "smtp.test.rs";
 //Set this to true if SMTP host requires authentication to send email
 $mail->SMTPAuth = true;                 
 //Provide username and password     
-$mail->Username = "info@xyz-design.rs";  
-$mail->Password = "KqMwLMbw";                    
+$mail->Username = "username";  
+$mail->Password = "password";                    
 //If SMTP requires TLS encryption then set it
 $mail->SMTPSecure = 'tls';             
 //Set TCP port to connect to
@@ -57,14 +57,14 @@ $mail->Port = 587;
 $mail->From = $clientEmail;  // Poslato sa -> (Klijentov Email)
 $mail->FromName = $clientName .' ~ '. $clientEmail;  
 
-$mail->addAddress("info@xyz-design.rs", 'Centar Novih Tehnologija | Office');
+$mail->addAddress("support@neodigital.pro", 'neodigital.pro');
 $mail->addReplyTo($clientEmail); 
 
 
 
 $mail->isHTML(true);
 
-$mail->Subject = 'Podrska | www.cnt.rs';
+$mail->Subject = 'Podrska | www.neodigital.pro';
 
 $message = "<i>Ime:</i> " . "<b>$clientName</b>" . "<br>" . "<i>Prezime:</i> " . "<b>$clientSurname</b>" . "<br>" . "<i>Kontakt Telefon:</i> " . "<b>$clientPhone</b>" . "<br>" . "<i>Firma:</i> " . "<b>$clientCompany</b>" . "<br>" . "<i>Usluga:</i> " . "<b>$ourOffer</b>" . "<br><br>" . "<i>Poruka:</i> <br>" . "<b>$clientMessage</b>" ;
 $mail->Body = $message;
